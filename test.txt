@@ -1,0 +1,19 @@
+create accounts
+--------------------------
+curl localhost:3000/account/create/peter/peter@mit.edu/one
+curl localhost:3000/account/create/john/john@mit.edu/two
+curl localhost:3000/account/create/abel/abel@mit.edu/three
+
+get account
+--------------------------
+curl localhost:3000/account/get/peter@mit.edu
+
+Account transactions
+--------------------------
+curl localhost:3000/account/deposit/peter@mit.edu/100
+curl localhost:3000/account/withdraw/peter@mit.edu/10
+curl localhost:3000/account/transactions/peter@mit.edu
+
+All Account data
+--------------------------
+curl localhost:3000/account/all
